@@ -1,0 +1,105 @@
+.navbar {
+    background: none;
+    background-image:url(imagen\ degrade.jpg);
+    border-radius: 30%;
+    font-size: small;
+
+}
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+    background-color: #e5e5f7;
+opacity: 0.8;
+background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 10px ), repeating-linear-gradient( #b4d8fb55, #b4d8fb );
+min-height: 100vh; 
+}
+
+.form{
+
+background-color: white;
+margin: auto;
+width: 90%;
+max-width: 400px;
+padding: 4.5em 3em;
+border-radius: 10px;
+box-shadow: 0 5px 10px -5px rgb(0 0 0 / 100%);
+width: auto;
+text-align: center;
+}
+
+.form_title{
+font-size:  2rem;
+margin-bottom: .5em;
+}
+
+.form_paragraph{
+font-weight:  300;
+}
+
+.form_link {
+font-size: 400;
+color: black;
+}
+
+.form_container{
+margin-top: 3em;
+display: grid;
+gap: 2.5em;
+}
+
+.form_group{
+position: relative;
+--color: black;
+}
+
+.form_input {
+width: 100%;
+background: none;
+color: black;
+font-size: 1rem;
+padding: .6em .3em;
+border: none;
+outline: none;
+border-bottom: 1px solid var(--color);
+font-family: 'roboto', sans-serif;
+}
+.form_input:focus + .form_label{
+    transform: translateY(-12px) scale(.7);
+}
+
+.form_label {
+color: var(--color);
+cursor: pointer;
+position: absolute;
+top: 0;
+left: 5px;
+transform: translateY(10px);
+transition: transform .5s, color .3s;
+}
+
+.form_submit{
+    background-color: blue;
+    color: #e5e5f7;
+    font-family: 'roboto', sans-serif;
+    font-weight:  300;
+    font-size: 1rem;
+    padding: .8em 0;
+    border-radius: .5em;
+}
+.form_line{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #3866f2;
+    transform: left bottom;
+}
+.navbar {
+    padding: 2rem 0;
+    flex: 1 1 auto;
+}
